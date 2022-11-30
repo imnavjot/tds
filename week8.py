@@ -20,7 +20,7 @@ ans = 0
  
 def calculate():
   ans = num1 - num2
-  st.success(f"Answer = {ans}")
+  st.success(f"Answer = {'%.2f' % ans}")
  
 if st.button("Subtract"):
     calculate()
