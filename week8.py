@@ -3,7 +3,8 @@
 
 
 import streamlit as st
- 
+import numpy as np
+
 st.title("Subtraction App using Streamlit")
  
 # creates a horizontal line
@@ -19,7 +20,7 @@ num2 = st.number_input(label="Enter second number")
 ans = 0
  
 def calculate():
-  ans = num1 - num2
+  ans = np.subtract(num1,num2)
   st.success(f"Answer = {ans}")
  
 if st.button("Subtract"):
