@@ -3,7 +3,7 @@
 
 
 import streamlit as st
-import numpy as np
+from decimal import dec
 
 st.title("Subtraction App using Streamlit")
  
@@ -20,8 +20,8 @@ num2 = st.number_input(label="Enter second number")
 ans = 0
  
 def calculate():
-  ans = np.subtract(num1,num2)
-  st.success(f"Answer = {ans}")
+  ans = dec(num1) - dec(num2)
+  st.success(f"Answer = {dec(ans)}")
  
 if st.button("Subtract"):
     calculate()
