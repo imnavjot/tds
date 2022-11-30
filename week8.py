@@ -25,7 +25,7 @@ num2 = st.number_input(label="Enter second number")
 ans = 0
  
 def calculate():
-  ans = num1 + num2
+  ans = num1 - num2
   st.success(f"Answer = {ans}")
  
 if st.button("Calculate result"):
