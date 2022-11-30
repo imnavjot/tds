@@ -21,7 +21,7 @@ num2 = st.number_input(label="Enter second number")
 ans = 0
  
 def calculate():
-  ans = Decimal('num1') - Decimal('num2')
+  ans = num1 - num2
   st.success(f"Answer = {ans}")
  
 if st.button("Subtract"):
