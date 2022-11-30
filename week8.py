@@ -3,7 +3,7 @@
 
 
 import streamlit as st
-from decimal import dec
+import decimal as dec
 
 st.title("Subtraction App using Streamlit")
  
