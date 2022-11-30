@@ -12,10 +12,10 @@ st.title("Subtraction App using Streamlit")
 st.write("---")
  
 # input 1
-num1 = st.number_input(label="Enter first number")
+num1 = Decimal('st.number_input(label="Enter first number")')
  
 # input 2
-num2 = st.number_input(label="Enter second number")
+num2 = Decimal('st.number_input(label="Enter second number")')
  
  
 ans = 0
