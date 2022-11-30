@@ -12,16 +12,16 @@ st.title("Subtraction App using Streamlit")
 st.write("---")
  
 # input 1
-num1 = Decimal('st.number_input(label="Enter first number")')
+num1 = st.number_input(label="Enter first number")
  
 # input 2
-num2 = Decimal('st.number_input(label="Enter second number")')
+num2 = st.number_input(label="Enter second number")
  
  
 ans = 0
  
 def calculate():
-  ans = num1 - num2
+  ans = Decimal('num1') - Decimal('num2')
   st.success(f"Answer = {ans}")
  
 if st.button("Subtract"):
