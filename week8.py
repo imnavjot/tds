@@ -3,7 +3,6 @@
 
 
 import streamlit as st
-import decimal as dec
 
 st.title("Subtraction App using Streamlit")
  
@@ -21,7 +20,7 @@ ans = 0
  
 def calculate():
   ans = num1 - num2
-  st.success(f"Answer = {dec(ans)}")
+  st.success(f"Answer = {ans}")
  
 if st.button("Subtract"):
     calculate()
